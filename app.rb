@@ -8,7 +8,7 @@ class BookmarkManager < Sinatra::Base
   end 
 
   get '/' do 
-    "Hello World"
+    "Bookmark Manager"
   end 
 
 
