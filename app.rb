@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sinatra/reloader'
 require 'sinatra/base'
+require_relative 'lib/bookmark'
 
 class BookmarkManager < Sinatra::Base
   configure :development do 
