@@ -11,4 +11,4 @@ gem 'sinatra-contrib'
 gem 'sinatra-reloader' 
 gem 'capybara' 
 gem 'rspec'
-
+gem 'pg'
