@@ -12,7 +12,6 @@ class BookmarkManager < Sinatra::Base
   end 
 
   get '/bookmarks' do
-    # @bookmarks = ['www.google.co.uk', 'www.amazon.co.uk']
     @bookmarks = Bookmark.all
     erb :index
   end
@@ -20,4 +19,4 @@ class BookmarkManager < Sinatra::Base
 
   run! if app_file == $0
 
-end 
+end
