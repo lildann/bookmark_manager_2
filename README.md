@@ -6,6 +6,13 @@ So that I can quickly go to web sites I regularly visit
 I would like to see the list of bookmarks that I have saved
 ```
 
+```
+As a user,
+So that I can save websites that I visit regularly,
+I would like to add bookmarks to my library.
+```
+
+
 ### To set up the database
 
 Connect to `psql` and create the `bookmark_manager` database:
