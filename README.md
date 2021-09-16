@@ -13,29 +13,28 @@ I would like to add bookmarks to my library.
 ```
 
 
-### To set up the database
 
-Connect to `psql` and create the `bookmark_manager` database:
-
+Instructions for Database Setup and Test Database Setup
+----
+* Connect to psql
+* Create the two databases using the psql command: 
 ```
 CREATE DATABASE bookmark_manager;
-```
-
-To set up the appropriate tables, connect to the database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
-
-### To set up a test database for RSpec
-
-Connect to `psql` and create the `bookmark_manager_test` database:
-
-```
 CREATE DATABASE bookmark_manager_test;
 ```
+* Connect to each database using the pqsl command 
+```
+\c bookmark_manager;
+\c bookmark_manager_test;
+```
+* To setup the approriate tables, run the SQL script saved in the `db/migrations` folder in the given order (file 01_create_bookmarks_table.sql)
 
-To set up the appropriate tables, connect to the database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order. 
 
-###
-![GitHub Logo](https://github.com/makersacademy/course/blob/main/bookmark_manager/walkthroughs/01.md )
-Format: ![Alt Text](url)
+### To run the Bookmark Manager app:
+
+```
+rackup -p 3000
+```
 
 
 
